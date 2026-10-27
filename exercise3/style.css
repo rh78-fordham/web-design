@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/hillbackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.text {
+    text-align: center;
+    display: none;
+    position: absolute;
+    z-index: 21;
+}
+
+.monster {
+    position: absolute;
+}
+
+.blankfacemonster {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 550px;
+    left: 450px;
+    display: block;
+    z-index: 20;
+}
+
+
+.smilingmonster {
+    display: none;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 550px;
+    left: 450px;
+    z-index: 20;
+}
+
+.hearteyemonster {
+    display: none;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 550px;
+    left: 450px;
+    z-index: 20;
+}
+
+.slightlyannoyedmonster {
+    display: none;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 550px;
+    left: 450px;
+    z-index: 20;
+}
+
+.angrymonster {
+    display: none;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 550px;
+    left: 450px;
+    z-index: 20;
+}
+
+.scaredmonster {
+    display: none;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 550px;
+    left: 450px;
+    z-index: 20;
+}
+
+.cryingmonster {
+    display: none;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 550px;
+    left: 450px;
+    z-index: 20;
+}
+
+.house {
+    position: relative;
+}
+
+.cartoonhouse {
+    position: absolute;
+    display: block;
+    width: 500px;
+    height: auto;
+    top: 300px;
+    left: 25px;
+    z-index: 10;
+}
+
+.teddybear {
+    display: block;
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 650px;
+    left: -50px;
+    z-index: 11;
+    animation: teddybear 3s 0s alternate infinite;
+}
+
+.soccerball {
+    display: block;
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 650px;
+    left: 300px;
+    z-index: 11;
+    animation: soccerball 1.5s 0s alternate-reverse infinite;
+}
+
+.robot {
+    display: block;
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 650px;
+    left: 75px;
+    z-index: 11;
+    animation: robot 1s 0s alternate infinite;
+}
+
+.teddybeartext, .robottext, .soccerballtext, .housetext {
+    display: none;
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+@media screen and (hover:hover) {
+    .monster:hover .smilingmonster {
+        display: block;
+    }
+    .monster:hover .blankfacemonster {
+        display: none;
+    }
+    .monster:active .hearteyemonster {
+        display: block;
+    }
+    .monster:active {
+        transform: translateY(-10px);
+    }
+    .monster:active .blankfacemonster {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .monster {
+        position: fixed;
+    }
+    .slightlyannoyedmonster {
+        display: block;
+    }
+    .blankfacemonster {
+        display: none;
+    }
+    .teddybear {
+        display: none;
+    }
+    .teddybeartext {
+        display: block;
+    }
+    .firsttext {
+        display: none;
+    }
+
+    .monster:hover .smilingmonster {
+        display: none;
+    }
+    .monster:hover .blankfacemonster {
+        display: none;
+    }
+    .monster:active .hearteyemonster {
+        display: none;
+    }
+    .monster:active {
+        transform: none;
+    }
+    .monster:active .blankfacemonster {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .angrymonster {
+        display: block;
+    }
+    .blankfacemonster, .slightlyannoyedmonster {
+        display: none;
+    }
+    .robot {
+        display: none;
+    }
+    .robottext {
+        display: block;
+    }
+    .teddybeartext {
+        display: none;
+    }
+    .firsttext {
+        display: none;
+    }
+
+    .monster:hover .smilingmonster {
+        display: none;
+    }
+    .monster:hover .blankfacemonster {
+        display: none;
+    }
+    .monster:active .hearteyemonster {
+        display: none;
+    }
+    .monster:active {
+        transform: none;
+    }
+    .monster:active .blankfacemonster {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .scaredmonster {
+        display: block;
+    }
+    .blankfacemonster, .slightlyannoyedmonster, .angrymonster {
+        display: none;
+    }
+    .soccerball {
+        display: none;
+    }
+    .soccerballtext {
+        display: block;
+    }
+    .robottext {
+        display: none;
+    }
+     .firsttext {
+        display: none;
+    }
+
+    .monster:hover .smilingmonster {
+        display: none;
+    }
+    .monster:hover .blankfacemonster {
+        display: none;
+    }
+    .monster:active .hearteyemonster {
+        display: none;
+    }
+    .monster:active {
+        transform: none;
+    }
+    .monster:active .blankfacemonster {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cryingmonster {
+        display: block;
+    }
+    .scaredmonster, .blankfacemonster, .slightlyannoyedmonster, .angrymonster, .hearteyemonster, .smilingmonster {
+        display: none;
+    }
+    .cartoonhouse {
+        display: none;
+    }
+    .housetext {
+        display: block;
+    }
+    .soccerballtext {
+        display: none;
+    }
+     .firsttext {
+        display: none;
+    }
+
+    .monster:hover .smilingmonster {
+        display: none;
+    }
+    .monster:hover .blankfacemonster {
+        display: none;
+    }
+    .monster:active .hearteyemonster {
+        display: none;
+    }
+    .monster:active {
+        transform: none;
+    }
+    .monster:active .blankfacemonster {
+        display: none;
+    }
+}
+
+@keyframes teddybear {
+    0% {transform: rotate(15deg);}
+    100% {transform: rotate(-15deg);}
+}
+
+@keyframes robot {
+    0% {transform: translateX(10px);}
+    100% {transform: translateX(-10px);}
+}
+
+@keyframes soccerball {
+    0% {transform: rotate(0deg) translateX(25px);}
+    100% {transform: rotate(360deg) translateX(-25px);}
+}
